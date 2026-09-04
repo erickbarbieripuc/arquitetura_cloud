@@ -3,9 +3,10 @@
 ## Integrantes
 
 - Luan Alberti Estevinho
-- Vinicius Garcia
-- Erick Marlon
+- Vinicius de Oliveira Garcia
+- Erick Marlon Barbieri da Silva
+- Arthur Ambrozewicz Cidral
 
 ## Repositório
 
-- GitHub: https://github.com/LuanEstevinho/arquitetura
+- GitHub: https://github.com/erickbarbieripuc/arquitetura_cloud
