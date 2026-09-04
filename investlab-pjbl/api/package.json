@@ -1,0 +1,9 @@
+{
+  "name": "investlab-api",
+  "version": "1.0.0",
+  "description": "Azure Functions (mock) do projeto InvestLab - PJBL",
+  "main": "index.js",
+  "scripts": {
+    "start": "func start"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestLab | Consulta de FII</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">📊 InvestLab</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="fii.html" class="active">Consulta de FII</a>
+      <a href="simulador.html">Simulador</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Consulta de FII</h1>
+    <p>Digite o ticker de um Fundo Imobiliário (ex: <strong>MXRF11</strong>) para ver os dados.</p>
+
+    <form id="fii-form" class="form-row">
+      <input type="text" id="ticker-input" placeholder="Ex: MXRF11" maxlength="8" required />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <p id="fii-status" class="status"></p>
+
+    <section id="fii-result" class="result-card hidden">
+      <div class="result-header">
+        <h2 id="fii-nome"></h2>
+        <span id="fii-ticker" class="badge"></span>
+      </div>
+      <div class="result-grid">
+        <div class="result-item">
+          <span class="label">Cotação</span>
+          <span class="value" id="fii-cotacao"></span>
+        </div>
+        <div class="result-item">
+          <span class="label">Dividend Yield (12m)</span>
+          <span class="value" id="fii-dy"></span>
+        </div>
+        <div class="result-item">
+          <span class="label">P/VP</span>
+          <span class="value" id="fii-pvp"></span>
+        </div>
+        <div class="result-item">
+          <span class="label">Último rendimento</span>
+          <span class="value" id="fii-rendimento"></span>
+        </div>
+        <div class="result-item">
+          <span class="label">Patrimônio</span>
+          <span class="value" id="fii-patrimonio"></span>
+        </div>
+        <div class="result-item">
+          <span class="label">Volatilidade</span>
+          <span class="value" id="fii-volatilidade"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto acadêmico PJBL — InvestLab &copy; 2026</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestLab | Simulador</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">📊 InvestLab</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="fii.html">Consulta de FII</a>
+      <a href="simulador.html" class="active">Simulador</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Simulador de Investimentos</h1>
+    <p>Informe os parâmetros da simulação. Os cenários (conservador, base, otimista) vêm do Azure Function mock.</p>
+
+    <form id="sim-form" class="form-grid">
+      <label>
+        Patrimônio inicial (R$)
+        <input type="number" id="sim-inicial" value="10000" min="0" step="100" required />
+      </label>
+      <label>
+        Aporte mensal (R$)
+        <input type="number" id="sim-aporte" value="800" min="0" step="50" required />
+      </label>
+      <label>
+        Horizonte (anos)
+        <select id="sim-horizonte">
+          <option value="5">5 anos</option>
+          <option value="10">10 anos</option>
+          <option value="15">15 anos</option>
+          <option value="20" selected>20 anos</option>
+        </select>
+      </label>
+      <button type="submit">Simular</button>
+    </form>
+
+    <p id="sim-status" class="status"></p>
+
+    <section id="sim-result" class="result-card hidden">
+      <h2>Resultado da simulação</h2>
+      <div class="result-grid">
+        <div class="result-item">
+          <span class="label">Cenário conservador</span>
+          <span class="value" id="sim-conservador"></span>
+        </div>
+        <div class="result-item">
+          <span class="label">Cenário base</span>
+          <span class="value" id="sim-base"></span>
+        </div>
+        <div class="result-item">
+          <span class="label">Cenário otimista</span>
+          <span class="value" id="sim-otimista"></span>
+        </div>
+        <div class="result-item">
+          <span class="label">Total aportado</span>
+          <span class="value" id="sim-aportado"></span>
+        </div>
+      </div>
+      <p class="disclaimer">
+        Simulação != previsão. Os valores são baseados em premissas de cenário, não são garantia de rentabilidade futura.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto acadêmico PJBL — InvestLab &copy; 2026</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
