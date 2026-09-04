@@ -1,9 +1,12 @@
 {
   "name": "investlab-api",
   "version": "1.0.0",
-  "description": "Azure Functions (mock) do projeto InvestLab - PJBL",
-  "main": "index.js",
+  "description": "Azure Functions mock do projeto InvestLab - PJBL",
+  "private": true,
   "scripts": {
     "start": "func start"
+  },
+  "engines": {
+    "node": "20"
   }
 }
