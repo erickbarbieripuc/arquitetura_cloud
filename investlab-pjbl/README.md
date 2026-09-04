@@ -4,10 +4,10 @@ Aplicação web desenvolvida com HTML, CSS e JavaScript para consulta de fundos 
 
 ## Integrantes
 
-Arthur Ambrozewicz Cidral
-Erick Marlon Barbieri da Silva
-Luan Alberti Estevinho
-Vinícius de Oliveira Garcia
+-  Arthur Ambrozewicz Cidral
+-  Erick Marlon Barbieri da Silva
+-  Luan Alberti Estevinho
+-  Vinícius de Oliveira Garcia
 
 ## Site publicado (Azure Static Web Apps)
 
